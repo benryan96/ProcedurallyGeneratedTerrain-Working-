@@ -1,0 +1,35 @@
+﻿Build started 13/11/2017 13:19:12.
+     1>Project "D:\ProcedurallyGeneratedTerrain\ProcedurallyGeneratedTerrain\ProcedurallyGeneratedTerrain.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt cameraclass.cpp colourshaderclass.cpp d3dclass.cpp graphicsclass.cpp inputclass.cpp main.cpp modelclass.cpp systemclass.cpp
+         systemclass.cpp
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.h(29): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.h(36): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+         modelclass.cpp
+         main.cpp
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.h(29): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.h(36): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+         inputclass.cpp
+         graphicsclass.cpp
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.h(29): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.h(36): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\graphicsclass.cpp(25): warning C4316: 'D3DClass': object allocated on the heap may not be aligned 16
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\graphicsclass.cpp(38): warning C4316: 'CameraClass': object allocated on the heap may not be aligned 16
+         d3dclass.cpp
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\d3dclass.cpp(33): warning C4101: 'stringLength': unreferenced local variable
+         colourshaderclass.cpp
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.h(29): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.h(36): error C2719: 'unnamed-parameter': formal parameter with requested alignment of 16 won't be aligned
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.cpp(40): error C2719: 'worldMatrix': formal parameter with requested alignment of 16 won't be aligned
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.cpp(40): error C2719: 'viewMatrix': formal parameter with requested alignment of 16 won't be aligned
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.cpp(40): error C2719: 'projectionMatrix': formal parameter with requested alignment of 16 won't be aligned
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.cpp(244): error C2719: 'worldMatrix': formal parameter with requested alignment of 16 won't be aligned
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.cpp(244): error C2719: 'viewMatrix': formal parameter with requested alignment of 16 won't be aligned
+     1>d:\procedurallygeneratedterrain\procedurallygeneratedterrain\colourshaderclass.cpp(244): error C2719: 'projectionMatrix': formal parameter with requested alignment of 16 won't be aligned
+         cameraclass.cpp
+         Generating Code...
+     1>Done Building Project "D:\ProcedurallyGeneratedTerrain\ProcedurallyGeneratedTerrain\ProcedurallyGeneratedTerrain.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.93

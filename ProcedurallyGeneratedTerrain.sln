@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProcedurallyGeneratedTerrain", "ProcedurallyGeneratedTerrain\ProcedurallyGeneratedTerrain.vcxproj", "{ADBBB9F9-5DF9-4938-97D8-A7ADE7E2D7F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8862735E-EA65-4713-9F45-C631D65B3BA6}"
+	ProjectSection(SolutionItems) = preProject
+		ProcedurallyGeneratedTerrain\Shaders\color.ps = ProcedurallyGeneratedTerrain\Shaders\color.ps
+		ProcedurallyGeneratedTerrain\Shaders\color.vs = ProcedurallyGeneratedTerrain\Shaders\color.vs
+		ProcedurallyGeneratedTerrain\Shaders\stone.tga = ProcedurallyGeneratedTerrain\Shaders\stone.tga
+		ProcedurallyGeneratedTerrain\Shaders\stone01.tga = ProcedurallyGeneratedTerrain\Shaders\stone01.tga
+		ProcedurallyGeneratedTerrain\Shaders\texture.ps = ProcedurallyGeneratedTerrain\Shaders\texture.ps
+		ProcedurallyGeneratedTerrain\Shaders\texture.vs = ProcedurallyGeneratedTerrain\Shaders\texture.vs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADBBB9F9-5DF9-4938-97D8-A7ADE7E2D7F0}.Debug|x64.ActiveCfg = Debug|x64
+		{ADBBB9F9-5DF9-4938-97D8-A7ADE7E2D7F0}.Debug|x64.Build.0 = Debug|x64
+		{ADBBB9F9-5DF9-4938-97D8-A7ADE7E2D7F0}.Debug|x86.ActiveCfg = Debug|Win32
+		{ADBBB9F9-5DF9-4938-97D8-A7ADE7E2D7F0}.Debug|x86.Build.0 = Debug|Win32
+		{ADBBB9F9-5DF9-4938-97D8-A7ADE7E2D7F0}.Release|x64.ActiveCfg = Release|x64
+		{ADBBB9F9-5DF9-4938-97D8-A7ADE7E2D7F0}.Release|x64.Build.0 = Release|x64
+		{ADBBB9F9-5DF9-4938-97D8-A7ADE7E2D7F0}.Release|x86.ActiveCfg = Release|Win32
+		{ADBBB9F9-5DF9-4938-97D8-A7ADE7E2D7F0}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
