@@ -1,2 +1,5 @@
-﻿  graphicsclass.cpp
+﻿  systemclass.cpp
+  main.cpp
+  graphicsclass.cpp
+  Generating Code...
   ProcedurallyGeneratedTerrain.vcxproj -> D:\ProcedurallyGeneratedTerrain(Working)\x64\Debug\ProcedurallyGeneratedTerrain.exe

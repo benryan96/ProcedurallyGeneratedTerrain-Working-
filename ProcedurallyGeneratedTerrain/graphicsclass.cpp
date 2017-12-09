@@ -50,7 +50,10 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	}
 
 	// Set the initial position of the camera.
-	m_Camera->SetPosition(0.0f, 0.0f, -5.0f);
+	m_Camera->SetPosition(-5.0f, 5.0f, -10.0f);
+
+	// Set the initial rotation of the camera.
+	m_Camera->SetRotation(20.0f, 20.0, 0.0f);
 
 	// Create the model object.
 	m_Model = new ModelClass;
@@ -60,7 +63,7 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	}
 
 	// Initialize the model object.
-	result = m_Model->Initialize(m_Direct3D->GetDevice(), m_Direct3D->GetDeviceContext(), "../ProcedurallyGeneratedTerrain/Shaders/stone01.tga");
+	result = m_Model->Initialize(m_Direct3D->GetDevice(), m_Direct3D->GetDeviceContext(), "../ProcedurallyGeneratedTerrain/Shaders/stone01.tga", "../ProcedurallyGeneratedTerrain/Shaders/cube.txt");
 	if (!result)
 	{
 		MessageBox(hwnd, L"Could not initialize the model object.", L"Error", MB_OK);
@@ -126,10 +129,17 @@ void GraphicsClass::Shutdown()
 bool GraphicsClass::Frame()
 {
 	bool result;
+	//static float rotation = 5.0f;
 
+	//// Update the rotation variable each frame.
+	//rotation += (float)XM_PI * 0.1;
+	//if (rotation > 360.0f)
+	//{
+	//	rotation -= 360.0f;
+	//}
 
 	// Render the graphics scene.
-	result = Render();
+	result = Render(/*rotation*/);
 	if(!result)
 	{
 		return false;
@@ -139,7 +149,7 @@ bool GraphicsClass::Frame()
 }
 
 
-bool GraphicsClass::Render()
+bool GraphicsClass::Render(/*float rotation*/)
 {
 	XMMATRIX worldMatrix, viewMatrix, projectionMatrix;
 	bool result;
@@ -155,6 +165,8 @@ bool GraphicsClass::Render()
 	m_Direct3D->GetWorldMatrix(worldMatrix);
 	m_Camera->GetViewMatrix(viewMatrix);
 	m_Direct3D->GetProjectionMatrix(projectionMatrix);
+
+	//XMMatrixRotationY(rotation);
 
 	// Put the model vertex and index buffers on the graphics pipeline to prepare them for drawing.
 	m_Model->Render(m_Direct3D->GetDeviceContext());
