@@ -131,12 +131,12 @@ bool GraphicsClass::Frame()
 	bool result;
 	//static float rotation = 5.0f;
 
-	//// Update the rotation variable each frame.
-	//rotation += (float)XM_PI * 0.1;
-	//if (rotation > 360.0f)
-	//{
-	//	rotation -= 360.0f;
-	//}
+	// Update the rotation variable each frame.
+	/*rotation += (float)XM_PI * 0.1;
+	if (rotation > 360.0f)
+	{
+		rotation -= 360.0f;
+	}*/
 
 	// Render the graphics scene.
 	result = Render(/*rotation*/);
@@ -166,7 +166,7 @@ bool GraphicsClass::Render(/*float rotation*/)
 	m_Camera->GetViewMatrix(viewMatrix);
 	m_Direct3D->GetProjectionMatrix(projectionMatrix);
 
-	//XMMatrixRotationY(rotation);
+	//DirectX::XMStoreFloat4x4(worldMatrix, rotation)
 
 	// Put the model vertex and index buffers on the graphics pipeline to prepare them for drawing.
 	m_Model->Render(m_Direct3D->GetDeviceContext());
